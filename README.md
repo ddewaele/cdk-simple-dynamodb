@@ -1,8 +1,10 @@
-# Welcome to your CDK TypeScript project
+# DynamoDB stack
 
-This is a blank project for CDK development with TypeScript.
+Very simple CDK stack that creates a DynamoDB table called `MoviesTable` for our [nestjs-testing](https://github.com/ddewaele/nestjs-testing) repository.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Creates a table with a `PK` and `SK` as partition key and sort key.
+
+Also creates a globla secondary index for the `year` attribute.
 
 ## Useful commands
 
